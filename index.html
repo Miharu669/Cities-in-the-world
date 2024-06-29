@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./public/output.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.4/dist/tailwind.min.css" rel="stylesheet">
+    <title>Cities in the World</title>
+</head>
+
+<body class="bg-gray-800">
+    <header class="h-100">
+        <div class="w-full h-full bg-headerbg bg-cover bg-center flex flex-col justify-center">
+            <nav class="w-full backdrop-blur-md">
+                <div class="flex flex-wrap items-center justify-between p-4">
+                    <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                        <span class="text-2xl font-bold whitespace-nowrap text-emerald-50">Cities in the World</span>
+                    </a>
+                    <button id="menu-button" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-emerald-400 rounded-lg md:hidden hover:bg-transparent focus:outline-none focus:ring-2 focus:ring-emerald-300 bg-transparent"
+                        aria-controls="navbar-solid-bg" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                    <div class="hidden w-full md:block md:w-auto" id="navbar-solid-bg">
+                        <ul
+                            class="flex flex-col font-medium mt-4 rounded-lg bg-transparent md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-transparent">
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-emerald-50 bg-transparent rounded md:bg-transparent md:dark:bg-transparent"
+                                    aria-current="page">Home</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-emerald-50 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-400">About</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2 px-3 text-emerald-50 rounded md:hover:bg-transparent md:border-0 md:hover:text-blue-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <h1 class="text-center text-5xl mb-11 text-white font-bold">NY City</h1>
+        </div>
+    </header>
+
+    <main class="w-full container mx-auto p-4 mt-8">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class=" bg-slate-100 p-4 rounded shadow md:col-span-1">
+                <h2 class="text-lg font-bold mb-4">Most Visited</h2>
+                <div class="space-y-4">
+                    <div class="relative">
+                        <img src="./public/images/paris.jpg" alt="Paris" class="w-full h-24 object-cover rounded">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold">
+                            <a href="#paris" class="hover:none">Paris</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/images/barcelona.png" alt="Barcelona"
+                            class="w-full h-24 object-cover rounded">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold">
+                            <a href="#barcelona" class="hover:none">Barcelona</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/images/tokyo.png" alt="Tokyo" class="w-full h-24 object-cover rounded">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold">
+                            <a href="#tokyo" class="hover:none">Tokyo</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/images/roma.png" alt="Rome" class="w-full h-24 object-cover rounded">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold">
+                            <a href="#rome" class="hover:none">Rome</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/images/london.png" alt="London" class="w-full h-24 object-cover rounded">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold">
+                            <a href="#london" class="hover:none">London</a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <img src="./public/images/dubai.jpg" alt="Dubai" class="w-full h-24 object-cover rounded">
+                        <div
+                            class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-lg font-semibold">
+                            <a href="#dubai" class="hover:none">Dubai</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div id="paris" class=" bg-slate-100 p-4 rounded shadow relative flex flex-col justify-between">
+                    <div>
+                        <img src="./public/images/paris.jpg" alt="Paris" class="w-full h-32 object-cover rounded mb-2">
+                        <h2 class="text-lg font-bold mb-2">Paris</h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <a href="https://www.parisinfo.com/" target="_blank"
+                        class="absolute bottom-4 right-4 px-4 py-2 bg-gray-500 text-white rounded-2xl text-sm hover:bg-emerald-600 mt-4">Visit</a>
+                </div>
+                <div id="barcelona" class=" bg-slate-100 p-4 rounded shadow relative flex flex-col justify-between">
+                    <div>
+                        <img src="./public/images/barcelona.png" alt="Barcelona"
+                            class="w-full h-32 object-cover rounded mb-2">
+                        <h2 class="text-lg font-bold mb-2">Barcelona</h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <a href="https://www.barcelonaturisme.com/" target="_blank"
+                        class="absolute bottom-4 right-4 px-4 py-2 bg-gray-500 text-white rounded-2xl text-sm hover:bg-emerald-600 mt-4">Visit</a>
+                </div>
+                <div id="tokyo" class=" bg-slate-100 p-4 rounded shadow relative flex flex-col justify-between">
+                    <div>
+                        <img src="./public/images/tokyo.png" alt="Tokyo" class="w-full h-32 object-cover rounded mb-2">
+                        <h2 class="text-lg font-bold mb-2">Tokyo</h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <a href="https://www.gotokyo.org/en/" target="_blank"
+                        class="absolute bottom-4 right-4 px-4 py-2 bg-gray-500 text-white rounded-2xl text-sm hover:bg-emerald-600 mt-4">Visit</a>
+                </div>
+                <div id="rome" class=" bg-slate-100 p-4 rounded shadow relative flex flex-col justify-between">
+                    <div>
+                        <img src="./public/images/roma.png" alt="Rome" class="w-full h-32 object-cover rounded mb-2">
+                        <h2 class="text-lg font-bold mb-2">Rome</h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <a href="https://www.turismoroma.it/en/" target="_blank"
+                        class="absolute bottom-4 right-4 px-4 py-2 bg-gray-500 text-white rounded-2xl text-sm hover:bg-emerald-600 mt-4">Visit</a>
+                </div>
+                <div id="london" class=" bg-slate-100 p-4 rounded shadow relative flex flex-col justify-between">
+                    <div>
+                        <img src="./public/images/london.png" alt="London"
+                            class="w-full h-32 object-cover rounded mb-2">
+                        <h2 class="text-lg font-bold mb-2">London</h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <a href="https://www.visitlondon.com/" target="_blank"
+                        class="absolute bottom-4 right-4 px-4 py-2 bg-gray-500 text-white rounded-2xl text-sm hover:bg-emerald-600 mt-4">Visit</a>
+                </div>
+                <div id="dubai" class="bg-slate-100 p-4 rounded shadow relative flex flex-col justify-between">
+                    <div>
+                        <img src="./public/images/dubai.jpg" alt="Dubai" class="w-full h-32 object-cover rounded mb-2">
+                        <h2 class="text-lg font-bold mb-2">Dubai</h2>
+                        <p class="mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+                    </div>
+                    <a href="https://www.visitdubai.com/en" target="_blank"
+                        class="absolute bottom-4 right-4 px-4 py-2 bg-gray-500 text-white rounded-2xl text-sm hover:bg-emerald-600 mt-4">Visit</a>
+                </div>
+            </div>
+
+        </div>
+       <section class="w-full bg-slate-100 rounded-md py-4">
+  <div class="w-full">
+    <h2 class="text-2xl font-semibold text-center">Most Popular Restaurant</h2>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2 justify-center px-10">
+    <div id="perSe" class="p-4 bg-transparent rounded relative flex flex-col justify-between items-center">
+      <div class="w-32 h-32 overflow-hidden rounded-full mb-2 flex items-center justify-center">
+        <img src="./public/images/perse.png" alt="Per Se" class="w-full h-full object-cover">
+      </div>
+      <p class="text-center font-semibold">Per Se</p>
+    </div>
+    <div id="theModern" class="p-4 bg-transparent rounded relative flex flex-col justify-between items-center">
+      <div class="w-32 h-32 overflow-hidden rounded-full mb-2 flex items-center justify-center">
+        <img src="./public/images/themodern.png" alt="The Modern" class="w-full h-full object-cover">
+      </div>
+      <p class="text-center font-semibold">The Modern</p>
+    </div>
+    <div id="minettaTavern" class="p-4 bg-transparent rounded relative flex flex-col justify-between items-center">
+      <div class="w-32 h-32 overflow-hidden rounded-full mb-2 flex items-center justify-center">
+        <img src="./public/images/minetta.png" alt="Minetta Tavern" class="w-full h-full object-cover">
+      </div>
+      <p class="text-center font-semibold">Minetta Tavern</p>
+    </div>
+    <div id="gramercyTavern" class="p-4 bg-transparent rounded relative flex flex-col justify-between items-center">
+      <div class="w-32 h-32 overflow-hidden rounded-full mb-2 flex items-center justify-center">
+        <img src="./public/images/gramercy.png" alt="Gramercy Tavern" class="w-full h-full object-cover">
+      </div>
+      <p class="text-center font-semibold">Gramercy Tavern</p>
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+    <footer class="bg-gray-900 bg-cover bg-center py-6 mt-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <p class="text-white text-sm ml-10">&copy; 2024 Vero Doel</p>
+
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('menu-button');
+            const menu = document.getElementById('navbar-solid-bg');
+
+            button.addEventListener('click', () => {
+                if (menu.classList.contains('hidden')) {
+                    menu.classList.remove('hidden');
+                    button.setAttribute('aria-expanded', 'true');
+                } else {
+                    menu.classList.add('hidden');
+                    button.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
